@@ -13,19 +13,23 @@ body {
     text-align: center;
     padding: 12px;
 
-    .header-nav {
-        margin-top: 10px;
+    .header-inner {
 
-        .header-nav-list {
-            display: flex;
-            justify-content: center;
-            gap: 24px;
-
-            .header-nav-link {
-                color: #fff;
+        .header-nav {
+            margin-top: 10px;
+    
+            .header-nav-list {
+                display: flex;
+                justify-content: center;
+                gap: 24px;
+    
+                .header-nav-link {
+                    color: #fff;
+                }
             }
         }
     }
+
 
 }
 
@@ -117,7 +121,7 @@ body {
                 }
             }
 
-            .menu-item+.menu-item {
+            .menu-item + .menu-item {
                 margin-top: 62px;
             }
         }
@@ -221,4 +225,117 @@ body {
             font-size: 12px;
         }
     }
+}
+
+/* タブレット、PCサイズの表示 */
+@media screen and (min-width: 768px) {
+    .header-inner {
+        max-width: 1080px;
+        padding: 0 40px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+        .header-nav-link {
+            transition: opacity 0.3s;
+        }
+        .header-nav-link:hover {
+            opacity: 0.7;
+        }
+    }
+
+    .inner {
+        max-width: 1080px;
+        padding: 0 40px;
+        margin: 0 auto;
+
+        .section-heading {
+
+            .section-heading-main {
+                font-size: 60px;
+            }
+        }
+
+    }
+
+
+    .about {
+        padding: 100px 0;
+
+        .about-contents {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+
+            .about-img {
+                width: 300px;
+            }
+
+            .about-text-contents {
+                margin-top: 0;
+
+                .about-text {
+                    font-size: 15px;
+                }
+            }
+
+        }
+    }
+
+    .menu {
+
+        .menu-contents {
+
+            .menu-list {
+                display: flex;
+                gap: 20px;
+
+                .menu-item + .menu-item {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+
+    .shop {
+        background-image: url('../img/bg-shop.png');
+        background-position: center center;
+        background-size: cover;
+
+        .shop-inner {
+            max-width: 600px;
+            margin: 0 auto;
+
+            .shop-contents {
+
+                .form {
+                    display: flex;
+                    gap: 20px;
+
+                    .form-submit {
+                        margin-top: 0;
+                        transition: opacity 0.3s;
+                    }
+                    .form-submit:hover {
+                        opacity: 0.7;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .footer {
+
+        .footer-text {
+            margin-top: 12px;
+        }
+
+
+        .footer-nav-list {
+            gap: 40px;
+        }
+    }
+
 }
