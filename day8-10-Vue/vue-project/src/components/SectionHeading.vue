@@ -13,7 +13,7 @@ defineProps({
 
 <template>
     <h2 class="text-center mb-10">
-        <span class="text-4xl block">{{ main }}</span>
-        <span class="text-sm block">{{ sub }}</span>
+        <span class="text-[40px] md:text-[64px] block">{{ main }}</span>
+        <span class="text-[12px] md:text-lg block">{{ sub }}</span>
     </h2>
 </template>

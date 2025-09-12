@@ -24,24 +24,24 @@ import SectionHeading from '@/components/SectionHeading.vue'
   </picture>
 </div>
 
-<section id="about" class="py-10 bg-[#f1eee4]">
+<section id="about" class="py-10 md:py-[100px] bg-[#f1eee4]">
   <Inner>
     <SectionHeading main="About" sub="ー 当店について ー" />
-    <div class="">
-      <img src="./images/about.png" alt="">
-      <div class="mt-5">
-        <p class="text-sm leading-loose">当店では、素材の持つ美味しさや風味を最大限に生かし、シンプルでありながらも、素材の良さを引き出すこだわりのスイーツを提供しています。</p>
-        <p class="text-sm leading-loose mt-4">自然な味わいを大切にし、素材を感じさせるスイーツで、心に残るひとときをお過ごしください。</p>
+    <div class="md:flex items-center gap-10">
+      <img src="./images/about.png" alt="" class="!w-[300px]">
+      <div class="mt-5 md:mt-0">
+        <p class="text-sm md:text-[16px] leading-loose">当店では、素材の持つ美味しさや風味を最大限に生かし、シンプルでありながらも、素材の良さを引き出すこだわりのスイーツを提供しています。</p>
+        <p class="text-sm md:text-[16px] leading-loose mt-4">自然な味わいを大切にし、素材を感じさせるスイーツで、心に残るひとときをお過ごしください。</p>
       </div>
     </div>
   </Inner>
 </section>
 
-<section id="menu" class="py-20 bg-[#f1eee4]">
+<section id="menu" class="py-20 md:pt-0 md:pb-[100px] bg-[#f1eee4]">
   <Inner>
     <SectionHeading main="Menu" sub="ー メニュー ー" />
     <div class="">
-      <ul>
+      <ul class="md:flex md:gap-5">
         <li>
           <div class="">
             <img src="./images/menu1.png" alt="">
@@ -54,7 +54,7 @@ import SectionHeading from '@/components/SectionHeading.vue'
             <p class="text-sm text-[#a98c5f] mt-4"># 旬のあまおうトッピング</p>
           </div>
         </li>
-        <li class="mt-16">
+        <li class="mt-16 md:mt-0">
           <div class="">
             <img src="./images/menu2.png" alt="">
           </div>
@@ -66,7 +66,7 @@ import SectionHeading from '@/components/SectionHeading.vue'
             <p class="text-sm text-[#a98c5f] mt-4"># フランス産チーズをブレンド</p>
           </div>
         </li>
-        <li class="mt-16">
+        <li class="mt-16 md:mt-0">
           <div class="">
             <img src="./images/menu3.png" alt="">
           </div>
@@ -83,8 +83,8 @@ import SectionHeading from '@/components/SectionHeading.vue'
   </Inner>
 </section>
 
-<section id="shop" class="bg-[url(/images/sp/bg-shop.png)] bg-cover bg-center py-20">
-  <div class="px-5">
+<section id="shop" class="bg-[url(/images/sp/bg-shop.png)] md:bg-[url(/images/bg-shop.png)] bg-cover bg-center py-20">
+  <div class="px-5 md:max-w-[600px] md:my-0 md:mx-auto">
     <SectionHeading main="Shop" sub="ー ショップ情報 ー" class="text-white" />
     <div class="">
       <p class="text-white text-center text-sm ">
@@ -94,9 +94,9 @@ import SectionHeading from '@/components/SectionHeading.vue'
         <br>
         メールアドレスへご案内いたします。
       </p>
-      <form action="#" class="mt-10">
+      <form action="#" class="mt-10 md:flex md:gap-5">
         <input type="email" placeholder="sample@sample.com" class="w-full rounded-[4px] bg-white/70 border-none p-3.5">
-        <button type="submit" class="rounded-[4px] border-none block mt-2.5 mx-auto w-[120px] py-3 px-2.5 text-white bg-[#a98c5f]">SEND</button>
+        <button type="submit" class="rounded-[4px] border-none block mt-2.5 md:mt-0 mx-auto w-[120px] py-3 px-2.5 text-white bg-[#a98c5f]">SEND</button>
       </form>
     </div>
   </div>
@@ -107,7 +107,7 @@ import SectionHeading from '@/components/SectionHeading.vue'
     <img src="./images/logo.svg" alt="">
   </div>
   <p class="text-[12px]">ー 各SNS更新中 ー</p>
-  <ul class="mt-10 flex justify-center gap-6 py-0 px-5">
+  <ul class="mt-10 flex justify-center gap-6 md:gap-10 py-0 px-5">
     <li>
       <a href="https://google.com" target="_blank" class="flex flex-col items-center">
         <img src="./images/icon-instagram.png" alt="" class="!w-[56px]">
@@ -128,7 +128,7 @@ import SectionHeading from '@/components/SectionHeading.vue'
     </li>
   </ul>
   <div class="border-t border-solid border-[#f1eee4]/25 p-3 mt-12">
-    <small class="text-[12px]">&copy;2023 Sweet Delight.</small>
+    <small class="text-[12px] md:text-sm">&copy;2023 Sweet Delight.</small>
   </div>
 </footer>
 
